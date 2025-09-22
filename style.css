@@ -1,0 +1,142 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(45deg, #ff00ff, #ffff00, #00ff00, #0000ff);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s infinite;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    animation: shake 0.5s infinite;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    15% { transform: translate(-1px, -2px) rotate(-1deg); }
+    
+}
+
+.winner-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 5px solid red;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.7);
+    border-radius: 15px;
+}
+
+.blinking-text {
+    font-size: 3em;
+    color: #ff0000;
+    animation: blink 0.5s infinite;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.prize-info {
+    font-size: 1.5em;
+    color: #008000;
+    font-weight: bold;
+}
+
+.confetti-gif {
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: 3px solid #000000;
+    font-weight: bold;
+    background-color: #ffcc00;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+    z-index: 10;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.absurd-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff99e6; 
+    border: 3px dashed blue;
+    padding: 20px;
+    z-index: 9999;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.absurd-popup button {
+    background-color: #00ff00;
+    border: 2px solid green;
+}
+
+.progress-container {
+    width: 80%;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.progress-bar {
+    width: 0;
+    height: 30px;
+    background-color: #ff0000;
+    transition: width 1s ease-in-out;
+}
+
+.side-ad {
+    position: fixed;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px dashed black;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 999;
+}
+
+.left-ad {
+    left: 10px;
+}
+
+.right-ad {
+    right: 10px;
+}
+
+.second-ad {
+    top: 250px;
+}
+
+.third-ad {
+    top: 450px;
+}
+
+.fourth-ad {
+    top: 650px;
+}
+
+.fifth-ad {
+    top: 850px;
+}
